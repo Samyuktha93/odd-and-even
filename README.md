@@ -1,15 +1,14 @@
 # odd-and-even
-import java.util.Scanner;
 public class OddEven {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num = sc.nextInt();
-        if (num % 2 == 0) {
-            System.out.println(num + " is Even.");
-        } else {
-            System.out.println(num + " is Odd.");
-        }
-        sc.close();
+  public static void checkOddEven(int num) {
+    if (num % 2 == 0) {
+      System.out.println(num + " is even");
+    } else {
+      System.out.println(num + " is odd");
     }
+  }
+  public static void main(String[] args) {
+    checkOddEven(10); // Output: 10 is even
+    checkOddEven(11); // Output: 11 is odd
+  }
 }
